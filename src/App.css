@@ -1,0 +1,314 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f5f7;
+  color: #252525;
+  font-size: 14px;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.directory-navbar {
+  min-height: 58px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.directory-navbar .container {
+  max-width: 1140px;
+}
+
+.directory-navbar .navbar-brand {
+  color: #20252c;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.directory-navbar .nav-link {
+  color: #454545;
+  font-size: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.directory-navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+.navbar-tools {
+  max-width: 100%;
+}
+
+.search-group {
+  width: 260px;
+  max-width: 100%;
+}
+
+.directory-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px 22px;
+  flex: 1;
+  background: #fff;
+}
+
+.directory-breadcrumb {
+  background: #343a40;
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin: 12px 0 20px;
+}
+
+.directory-breadcrumb .breadcrumb {
+  font-size: 12px;
+}
+
+.directory-breadcrumb .breadcrumb-item,
+.directory-breadcrumb .breadcrumb-item.active {
+  color: #f8f9fa;
+}
+
+.directory-breadcrumb a {
+  color: #d7dce1;
+  text-decoration: none;
+}
+
+.directory-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.directory-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #adb5bd;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: #292929;
+}
+
+.page-header .btn {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.student-grid {
+  align-items: stretch;
+}
+
+.student-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 13px rgba(0, 0, 0, 0.14);
+}
+
+.student-avatar {
+  height: 120px;
+  background: #d1d3d6;
+  color: #85888e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-avatar svg {
+  width: 76px;
+  height: 76px;
+}
+
+.student-card .card-body {
+  padding: 14px;
+}
+
+.student-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #343a40;
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+
+.student-info p {
+  margin: 0 0 5px;
+  color: #454545;
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.student-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.student-actions .btn,
+.details-button {
+  font-size: 11px;
+  padding: 5px 8px;
+}
+
+.student-actions .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.student-actions .btn-outline-primary:hover {
+  color: white;
+  background: #0d6efd;
+}
+
+.student-actions .btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.student-actions .btn-outline-danger:hover {
+  color: white;
+  background: #dc3545;
+}
+
+.details-button {
+  margin-top: 8px;
+}
+
+.student-details {
+  margin-top: 12px;
+  padding: 10px;
+  background: #f1f5fb;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+.student-details p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.directory-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 16px;
+}
+
+.directory-pagination .page-link {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.directory-alert {
+  margin: 15px 0 0;
+  padding: 12px 38px 12px 14px;
+  font-size: 12px;
+}
+
+.directory-footer {
+  background: #292d32;
+  color: white;
+  padding: 28px 0 15px;
+  margin-top: 0;
+}
+
+.directory-footer .container {
+  max-width: 1100px;
+}
+
+.directory-footer h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.directory-footer a {
+  display: block;
+  margin-bottom: 7px;
+  color: #e2e5e8;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.directory-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.directory-footer p {
+  font-size: 12px;
+  margin-bottom: 7px;
+  color: #e2e5e8;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  margin-top: 18px;
+  padding-top: 14px;
+  text-align: center;
+  color: #d1d1d1;
+  font-size: 11px;
+}
+
+@media (max-width: 767px) {
+  .directory-container {
+    padding: 0 14px 20px;
+  }
+
+  .directory-navbar .navbar-collapse {
+    padding: 12px 0;
+  }
+
+  .navbar-tools,
+  .search-group {
+    width: 100%;
+  }
+
+  .page-header h1 {
+    font-size: 21px;
+  }
+
+  .student-avatar {
+    height: 110px;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
